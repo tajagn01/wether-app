@@ -22,17 +22,12 @@ A modern, responsive weather application built with HTML, CSS, and JavaScript th
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
+https://github.com/tajagn01/wether-app.git
 ```
 
 2. Get an API key from [OpenWeatherMap](https://openweathermap.org/api)
 
-3. Replace the API key in `script.js`:
-```javascript
-const API_KEY = 'your-api-key-here';
-```
-
-4. Open `index.html` in your browser or use a local server
+3. Open `index.html` in your browser or use a local server
 
 ## Usage
 
