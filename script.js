@@ -1,7 +1,7 @@
 const form = document.getElementById('search-form');
 const cityInput = document.getElementById('city-input');
 const weatherInfo = document.getElementById('weather-info');
-const API_KEY = '2fd93913159ca115fa7e89d3f24a7878'; // Use your OpenWeatherMap API key
+const API_KEY = '2fd93913159ca115fa7e89d3f24a7878';
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -35,23 +35,23 @@ function setBackgroundByWeather(main) {
   let url;
   switch (main) {
     case 'Clear':
-      url = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80"; // sunny
+      url = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80";
       break;
     case 'Clouds':
-      url = "https://images.unsplash.com/photo-1668402786143-1c81c818e315?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3VkZXxlbnwwfHwwfHx8MA%3D%3D"; // cloudy
+      url = "https://images.unsplash.com/photo-1668402786143-1c81c818e315?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3VkZXxlbnwwfHwwfHx8MA%3D%3D";
       break;
     case 'Rain':
     case 'Drizzle':
-      url = "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1500&q=80"; // rainy
+      url = "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=1500&q=80";
       break;
     case 'Thunderstorm':
-      url = "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1500&q=80"; // thunderstorm
+      url = "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1500&q=80";
       break;
     case 'Snow':
-      url = "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1500&q=80"; // snowy
+      url = "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1500&q=80";
       break;
     default:
-      url = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80"; // default
+      url = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80";
   }
   document.body.style.backgroundImage = `url('${url}')`;
 }
